@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SaveFragment">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:alignmentMode="alignMargins"
+            app:columnCount="2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="16dp"
+            app:rowCount="3">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonShareImage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Share Image"
+                app:cornerRadius="8dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                android:layout_marginEnd="16dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonShareApps"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Share Apps"
+                app:cornerRadius="8dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonOtherApps"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Other Apps"
+                app:cornerRadius="8dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                android:layout_marginEnd="16dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonRateApp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Rate the App"
+                app:cornerRadius="8dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonHome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                app:cornerRadius="8dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1"
+                android:layout_marginEnd="16dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonAds"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Ads"
+                app:cornerRadius="8dp"
+                app:layout_columnWeight="1"
+                app:layout_rowWeight="1" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
